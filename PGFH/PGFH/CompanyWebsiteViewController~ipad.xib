@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompanyWebsiteViewController">
+            <connections>
+                <outlet property="backBtn" destination="Lq9-zx-bRS" id="haU-f4-TVF"/>
+                <outlet property="logoimg" destination="31o-Dm-1qi" id="wRs-7a-LUO"/>
+                <outlet property="view" destination="iN0-l3-epB" id="utR-28-RB6"/>
+                <outlet property="webView" destination="DAd-be-X5w" id="bpH-QY-Rea"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="navigationbar.png" highlightedImage="navigationbar.png" translatesAutoresizingMaskIntoConstraints="NO" id="qht-r8-iy7">
+                    <rect key="frame" x="1" y="2" width="767" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DAd-be-X5w">
+                    <rect key="frame" x="1" y="79" width="767" height="945"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lq9-zx-bRS">
+                    <rect key="frame" x="13" y="10" width="77" height="61"/>
+                    <state key="normal" backgroundImage="reveal-icon.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon@3x_180-180.png" translatesAutoresizingMaskIntoConstraints="NO" id="31o-Dm-1qi">
+                    <rect key="frame" x="277" y="10" width="139" height="72"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon@3x_180-180.png" width="180" height="180"/>
+        <image name="navigationbar.png" width="640" height="100"/>
+        <image name="reveal-icon.png" width="30" height="30"/>
+    </resources>
+</document>
